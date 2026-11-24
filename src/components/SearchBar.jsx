@@ -13,11 +13,13 @@ function SearchBar({
       <input
         type="text"
         placeholder="Search products..."
+        aria-label="Search products"
         value={searchText}
         onChange={(event) => onSearchChange(event.target.value)}
       />
 
       <select
+        aria-label="Filter by category"
         value={category}
         onChange={(event) => onCategoryChange(event.target.value)}
       >
@@ -29,6 +31,7 @@ function SearchBar({
       </select>
 
       <select
+        aria-label="Sort products by price"
         value={sortOrder}
         onChange={(event) => onSortChange(event.target.value)}
       >
@@ -37,7 +40,11 @@ function SearchBar({
         <option value="high-to-low">Price: High to Low</option>
       </select>
 
-      <button onClick={onClearFilters}>
+      <button
+        type="button"
+        aria-label="Clear all search and filter settings"
+        onClick={onClearFilters}
+      >
         Clear Filters
       </button>
     </div>
