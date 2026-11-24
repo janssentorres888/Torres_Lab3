@@ -8,8 +8,10 @@ function ProductCard({
   children,
 }) {
   return (
-    <div className={`product-card ${inStock ? "in-stock" : "out-of-stock"}`}>
-
+    <div
+      className={`product-card ${inStock ? "in-stock" : "out-of-stock"}`}
+      aria-label={`${title}, ${inStock ? "In Stock" : "Out of Stock"}`}
+    >
       <div className="product-badge">
         {children}
       </div>
@@ -19,7 +21,8 @@ function ProductCard({
       <p className="product-category">{category}</p>
 
       <h2 className="product-price">
-        ₱{price.toLocaleString("en-PH", {
+        ₱
+        {price.toLocaleString("en-PH", {
           minimumFractionDigits: 2,
           maximumFractionDigits: 2,
         })}
@@ -35,10 +38,10 @@ function ProductCard({
         className="add-to-cart-btn"
         onClick={() => onAddToCart(title)}
         disabled={!inStock}
+        aria-label={`Add ${title} to cart`}
       >
         {inStock ? "Add to Cart" : "Unavailable"}
       </button>
-
     </div>
   );
 }
