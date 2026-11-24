@@ -1,5 +1,5 @@
 
-# CvSU Mini Store – Product Catalog
+# RUSEANDER Store – Product Catalog
 
 ## Description
 

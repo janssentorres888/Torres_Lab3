@@ -17,7 +17,7 @@ function App() {
     <div className="app-container">
 
       <header className="store-header">
-        <h1>CvSU Mini Store</h1>
+        <h1>RUSEANDER Store</h1>
         <p>Your One-Stop Shop for Everyday Essentials</p>
       </header>
 
@@ -53,7 +53,7 @@ function App() {
       </main>
 
       <footer className="store-footer">
-        <p>© 2026 CvSU Mini Store | DCIT26 Laboratory Exercise 3</p>
+        <p>© 2026 RUSEANDER Store | DCIT26 Laboratory Exercise 3</p>
       </footer>
 
     </div>
