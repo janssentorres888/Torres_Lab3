@@ -93,7 +93,7 @@ function App() {
           onClearFilters={handleClearFilters}
         />
 
-        <p className="results-count">
+        <p className="results-count" aria-live="polite">
           Showing {filteredProducts.length} of {products.length} products
         </p>
 
