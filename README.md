@@ -1,16 +1,81 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# CvSU Mini Store – Product Catalog
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+CvSU Mini Store is a mini product catalog application
+built using React and Vite.
 
-## React Compiler
+This project demonstrates React Props and Component
+Communication.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Reusable ProductCard component
+- Passing data using props
+- Props destructuring and default values
+- Conditional rendering and styling
+- In Stock and Out of Stock status
+- Add to Cart callback function
+- Cart message using useState
+- Reusable components using map()
+- Children props for New and Sale badges
+- Responsive product grid
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+
+- React
+- Vite
+- JavaScript
+- CSS
+- Git and GitHub
+
+## Installation
+
+1. Clone the repository.
+2. Open the project folder.
+3. Install dependencies:
+
+   npm install
+
+4. Run the development server:
+
+   npm run dev
+
+## Guide Questions
+
+### 1. What is the difference between props and state?
+
+Props are used to pass data from a parent component
+to a child component. State is used to store and
+manage data that can change inside a component.
+
+### 2. Why can a child component not modify the props it receives?
+
+Props are read-only. A child component cannot directly
+change the values passed by its parent.
+
+### 3. How does the onAddToCart callback allow data to flow from child to parent even though props only flow downward?
+
+The parent passes a function to the child through props.
+When the child calls that function, it sends the product
+title back to the parent.
+
+### 4. Why is the key prop required when rendering a list with .map()? What could happen if it is missing or duplicated?
+
+The key prop helps React identify each item in a list.
+Without unique keys, React may have difficulty tracking
+changes and updating the correct elements.
+
+### 5. What does the children prop allow you to do that a normal prop does not?
+
+The children prop allows components to receive and
+display content placed between their opening and
+closing tags. This makes components more flexible
+and reusable.
+
+## Author
+
+DCIT26 – Application Development and Emerging Technologies
+
+Laboratory Exercise 3
